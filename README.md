@@ -27,8 +27,8 @@
   - Create video (Record the process with the consent of the participants)
   - Use project specific roles to gather insights
   - Members of your team should take the 3 roles:
-      1. one facilitator
-      2. one human-computer to simulate participant's intention with the interface
-      3. one or two observers
+      - one facilitator
+      - one human-computer to simulate participant's intention with the interface
+      - one or two observers
    
 
