@@ -1,3 +1,6 @@
+**Group 3: Alexandra Anthony, Sara Gaber, Ahmad Shah, Neeti Mistry, & Sohan Chatterjee**
+
+
 # Health Monitoring App
 - Every group opting for this project will be provided with a Fitbit Inspire 2.
 - Develop a system that seamlessly incorporates health data from smart hardware into a web app through an API.
@@ -17,5 +20,15 @@
 - Build a system for establishing and tracking health goals.
 - Enable manual input of health data, such as food intake.
 
+# Milestone 1
+- Complete Paper Prototyping
+- Complete Usability Testing (afte paper prototyping is done)
+  - 2 to 3 Participants (can't be from our class)
+  - Create video (Record the process with the consent of the participants)
+  - Use project specific roles to gather insights
+  - Members of your team should take the 3 roles:
+      1. one facilitator
+      2. one human-computer to simulate participant's intention with the interface
+      3. one or two observers
+   
 
-**Group 3: Alexandra Anthony, Sara Gaber, Ahmad Shah, Neeti Mistry, & Sohan Chatterjee**
