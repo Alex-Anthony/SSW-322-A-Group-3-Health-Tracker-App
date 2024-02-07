@@ -31,4 +31,25 @@
       - one human-computer to simulate participant's intention with the interface
       - one or two observers
    
+# Milestone 2
+- Create UML diagrams for the project
+- Before starting, we recommend your group flesh out a set of requirements, and then use those requirements when creating your diagrams
+- Create 3 UML diagrams:
+  1. Use case diagram
+  2. Activity diagram
+  3. Class diagram
+- These diagrams should be created with digital apps, not hand-drawn
+- You should follow the standard symbols and notations of each diagram
+- Please submit your diagrams in PDF format
+- For the health tracking app, consider the users: health coach and participant
+- Then create and submit slides for your milestone 2:
+    - Introduction
+    - Use case diagram
+    - Activity diagram
+    - Class diagram
+    - Summary
+   
+
+
+
 
