@@ -51,8 +51,13 @@
 
 # Milestone 3
 - Create Interface, Implement API
+- Project Summary: your task is to implement the functions of the application. The following system requirements must be met.
+  - Functions
+    - baseline of the frontend and backend: user login, FitBit oauth, displaying user FitBit data, navigation, and basic user interface
+- Demo and Presentation
+  - A brief intro to your team work, in terms of language, platform, team member responsibilities, effort estimation (hours, lines of code, number of commits). You can use screen shot from Github as supporting materials. Please include the URL of your Github project in the slides.
+  - A demo of the required functions
+  - A summary of challenges and strength in your team work.
+  - Any iterative changes you have made to your UML diagrams, as a result of your implementation.  (Remember, good design means that your UML diagrams always reflect your code exactly.)
+  - Please submit your slides in the pdf format to this assignment on Canvas.
    
-
-
-
-
