@@ -11,7 +11,7 @@ const insights = () => {
       <div>
         <h1 className="text-3xl font-extrabold pl-10 pt-10">Insights</h1>
         <div className="static basis-full">
-          <div className="absolute inset-20 grid grid-flow-row grid-cols-3 grid-rows-4 p-5 gap-5 content-stretch">
+          <div className="absolute inset-20 grid grid-flow-row lg:grid-cols-3 lg:grid-rows-4 p-5 gap-5 content-stretch">
             <SmallCard title="Total Steps"></SmallCard>
             <SmallCard title="Sleep Hours"></SmallCard>
             <div className="row-span-2">

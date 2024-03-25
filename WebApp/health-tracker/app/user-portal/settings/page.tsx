@@ -9,7 +9,7 @@ const userSettings = () => {
       <div>
         <h1 className="text-3xl font-extrabold pl-10 pt-10">Settings</h1>
         <div className="static flex w-full">
-          <div className="absolute inset-20 h-screen grid grid-cols-2 p-5 gap-5 justify-center items-stretch">
+          <div className="absolute h-screen grid md:grid-cols-2 p-5 gap-5 justify-center items-stretch">
             <div className="flex basis-1/2 h-screen flex-col gap-5 items-center">
               <div className="avatar">
                 <div className="w-64 mask mask-squircle">

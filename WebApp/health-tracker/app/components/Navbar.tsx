@@ -6,7 +6,7 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <div>
-      <ul className="menu bg-base-200 w-16 h-screen rounded-box flex justify-center">
+      <ul className="menu bg-base-200 w-16 h-dvh rounded-box flex justify-center">
         <div>
           <li className="pt-40 py-3">
             <div className="tooltip" data-tip="Home">

@@ -41,7 +41,10 @@ const config = {
   },
   plugins: [require("daisyui"), require("tailwindcss-animate")],
   daisyui: {
-    themes: ["winter", "light", "dark", "retro","cyberpunk","valentine","aqua"],
+    themes: ["winter", {
+      dark:{
+      ...require("daisyui/src/theming/themes")["night"],
+    }}, "retro","cyberpunk","valentine","aqua"],
   },
 } satisfies Config
 

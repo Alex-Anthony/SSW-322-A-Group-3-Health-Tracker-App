@@ -8,8 +8,8 @@ interface WGProps {
 
 const Widget = ({ title, svgPath }: WGProps) => {
   return (
-    <div className="card-compact bg-secondary">
-      <div className="card-body items-center">
+    <div className="card-compact bg-secondary h-32 w-32">
+      <div className="card-body h-full justify-center items-center">
         <div className="mask mask-squircle bg-base-100">
           <svg
             xmlns="http://www.w3.org/2000/svg"

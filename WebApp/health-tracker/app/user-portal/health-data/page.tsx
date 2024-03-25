@@ -11,24 +11,26 @@ const healthData = () => {
       <div>
         <h1 className="text-3xl font-extrabold pl-10 pt-10">Health Data</h1>
         <div className="static flex basis-full justify-center">
-          <div className="absolute inset-20 grid grid-cols-2 p-5 gap-5 content-stretch">
+          <div className="absolute inset-20 grid lg:grid-cols-2 md:grid-cols-1 p-5 gap-5 content-stretch">
             <div className="flex basis-1/2 flex-col gap-5">
-              <SmallCard title="Quick Look">
-                <div className="flex flex-row gap-3">
-                  <Widget
-                    title="9 hours avg."
-                    svgPath="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                  ></Widget>
-                  <Widget
-                    title="65 bpm avg."
-                    svgPath="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                  ></Widget>
-                  <Widget
-                    title="5 workouts avg."
-                    svgPath="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                  ></Widget>
-                </div>
-              </SmallCard>
+              <div className="min-w-max">
+                <SmallCard title="Quick Look">
+                  <div className="flex w-full flex-row gap-3 justify-between">
+                    <Widget
+                      title="9 hours avg."
+                      svgPath="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    ></Widget>
+                    <Widget
+                      title="65 bpm avg."
+                      svgPath="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    ></Widget>
+                    <Widget
+                      title="5 workouts avg."
+                      svgPath="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    ></Widget>
+                  </div>
+                </SmallCard>
+              </div>
               <SmallCard title="Step Tracker">
                 <SmallBarChart></SmallBarChart>
               </SmallCard>

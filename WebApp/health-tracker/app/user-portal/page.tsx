@@ -9,14 +9,14 @@ const home = () => {
     <div className="flex items-start">
       <Menu />
       <div className="flex flex-wrap flex-col gap-10">
-        <div className="card w-full h-60 image-full">
+        <div className="card w-full max-h-60 image-full">
           <figure>
             <Image src={headerimg} alt="" />
           </figure>
           <div className="card-body">
-            <div className="py-5 px-5 w-1/3">
+            <div className="py-5 px-5 min-w-1/3 max-w-md">
               <TextBox title="Hello User, Welcome Back">
-                <p className="text-neutral">
+                <p className="text-neutral-content">
                   Explore more of your fitness journey
                 </p>
               </TextBox>
@@ -24,43 +24,42 @@ const home = () => {
           </div>
         </div>
         <div className="py-5 px-5 grid grid-cols-2 gap-5 justify-evenly">
-          <div className="flex flex-col justify-center">
-            <TextBox title="Your Goals">
-              <table className="table text-xl">
-                <tbody>
-                  <tr>
-                    <td>Steps</td>
-                    <td>
-                      <progress
-                        className="progress progress-accent w-56"
-                        value={60}
-                        max="100"
-                      ></progress>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Sleep</td>
-                    <td>
-                      <progress
-                        className="progress progress-accent w-56"
-                        value={90}
-                        max="100"
-                      ></progress>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Workout minutes</td>
-                    <td>
-                      <progress
-                        className="progress progress-accent w-56"
-                        value={30}
-                        max="100"
-                      ></progress>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </TextBox>
+          <div className="flex flex-col justify-center place-items-center">
+              <div className="max-w-md align-center">
+              <TextBox title="Your Goals">
+                <div className="grid grid-cols-2 w-full text-lg">
+                    <div>Steps</div>
+                      <div>
+                        <progress
+                          className="progress progress-accent max-w-full"
+                          value={60}
+                          max="100"
+                        /></div>
+                      
+                      <div>Sleep</div>
+                      <div>
+                        <progress
+                          className="progress progress-accent max-w-full"
+                          value={90}
+                          max="100"
+                        ></progress>
+                      </div>
+                
+                    
+                      <div>Workout minutes</div>
+                      <div>
+                        <progress
+                          className="progress progress-accent max-w-full"
+                          value={30}
+                          max="100"
+                        ></progress>
+                      </div>
+                  
+                
+                </div>
+                </TextBox>
+              </div>
+            
           </div>
           <div className="flex flex-col justify-center">
             <div className="stats stats-vertical shadow">
