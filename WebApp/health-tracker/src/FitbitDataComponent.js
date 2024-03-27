@@ -6,10 +6,10 @@ const FitbitDataComponent = () => {
     const [profile, setProfile] = useState('');
     const [heartrate, setHeartrate] = useState('');
 
-/************ Change for your app *************/
-const clientId = '23RTL2';
-const clientSecret = 'e26fc818e7efa937210c4cc96aec4008';
-const redirectUri = 'https://healthmonitoringapp-152ca.web.app'; // the redirectURL in FitBit app
+    /************ Change for your app *************/
+    const clientId = '23RTL2';
+    const clientSecret = 'e26fc818e7efa937210c4cc96aec4008';
+    const redirectUri = 'https://healthmonitoringapp-152ca.web.app'; // the redirectURL in FitBit app
 
     /*  ------------------------------ Authorization ------------------------------  */
 
@@ -92,7 +92,7 @@ const redirectUri = 'https://healthmonitoringapp-152ca.web.app'; // the redirect
 
     const getProfile = async (accessToken) => {
         const profileEndpoint = 'https://api.fitbit.com/1/user/-/profile.json';
-        const profileHeaders = { 
+        const profileHeaders = {
             headers: {
                 Authorization: `Bearer ${accessToken}`,
             }
@@ -115,9 +115,9 @@ const redirectUri = 'https://healthmonitoringapp-152ca.web.app'; // the redirect
 
     return (
         <div>
-        <h2>Hi {profile != "" ? profile.user.fullName : "World"}! 
-        You burned {heartrate != "" ? heartrate?.['activities-heart'][0]?.dateTime : "YYYY-MM-DD"} is {heartrate != "" ? heartrate?.['activities-heart'][0]?.value.heartRateZones[0].caloriesOut : "???"} calories
-        </h2>
+            <h2>Hi {profile != "" ? profile.user.fullName : "World"}!
+                You burned {heartrate != "" ? heartrate?.['activities-heart'][0]?.dateTime : "YYYY-MM-DD"} is {heartrate != "" ? heartrate?.['activities-heart'][0]?.value.heartRateZones[0].caloriesOut : "???"} calories
+            </h2>
             <p>{JSON.stringify(profile)}</p>
             <hr></hr>
             <p>{JSON.stringify(heartrate)}</p>

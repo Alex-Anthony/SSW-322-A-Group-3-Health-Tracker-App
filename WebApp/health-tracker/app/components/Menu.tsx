@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import { getUsername } from "../user-portal/Users";
+
 
 const Menu = () => {
   return (
@@ -10,7 +12,7 @@ const Menu = () => {
             <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
           </div>
         </div>
-        <p className="flex justify-center py-5">user</p>
+        <p className="flex justify-center py-5">{getUsername()}</p>
         <li className="pt-4 py-2">
           <Link href="/user-portal">
             <svg

@@ -1,10 +1,14 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import Menu from "../components/Menu";
 import TextBox from "../components/TextBox";
 import headerimg from "@/public/header.jpeg";
 import Image from "next/image";
+import FitbitDataComponent from "@/src/FitbitDataComponent"
+import { getHeartrate, getUsername } from "./Users";
 
-const home = () => {
+
+const Home = () => {
   return (
     <div className="flex items-start">
       <Menu />
@@ -15,7 +19,8 @@ const home = () => {
           </figure>
           <div className="card-body">
             <div className="py-5 px-5 min-w-1/3 max-w-md">
-              <TextBox title="Hello User, Welcome Back">
+
+              <TextBox title={"Hello " + getUsername() + ", Welcome Back"}>
                 <p className="text-neutral-content">
                   Explore more of your fitness journey
                 </p>
@@ -25,41 +30,41 @@ const home = () => {
         </div>
         <div className="py-5 px-5 grid grid-cols-2 gap-5 justify-evenly">
           <div className="flex flex-col justify-center place-items-center">
-              <div className="max-w-md align-center">
+            <div className="max-w-md align-center">
               <TextBox title="Your Goals">
                 <div className="grid grid-cols-2 w-full text-lg">
-                    <div>Steps</div>
-                      <div>
-                        <progress
-                          className="progress progress-accent max-w-full"
-                          value={60}
-                          max="100"
-                        /></div>
-                      
-                      <div>Sleep</div>
-                      <div>
-                        <progress
-                          className="progress progress-accent max-w-full"
-                          value={90}
-                          max="100"
-                        ></progress>
-                      </div>
-                
-                    
-                      <div>Workout minutes</div>
-                      <div>
-                        <progress
-                          className="progress progress-accent max-w-full"
-                          value={30}
-                          max="100"
-                        ></progress>
-                      </div>
-                  
-                
+                  <div>Steps</div>
+                  <div>
+                    <progress
+                      className="progress progress-accent max-w-full"
+                      value={60}
+                      max="100"
+                    /></div>
+
+                  <div>Sleep</div>
+                  <div>
+                    <progress
+                      className="progress progress-accent max-w-full"
+                      value={90}
+                      max="100"
+                    ></progress>
+                  </div>
+
+
+                  <div>Workout minutes</div>
+                  <div>
+                    <progress
+                      className="progress progress-accent max-w-full"
+                      value={30}
+                      max="100"
+                    ></progress>
+                  </div>
+
+
                 </div>
-                </TextBox>
-              </div>
-            
+              </TextBox>
+            </div>
+
           </div>
           <div className="flex flex-col justify-center">
             <div className="stats stats-vertical shadow">
@@ -84,8 +89,8 @@ const home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
-export default home;
+export default Home;

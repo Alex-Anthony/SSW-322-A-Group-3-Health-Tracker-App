@@ -1,7 +1,9 @@
 import Image from "next/image";
 import LoginBox from "./components/LoginBox";
 import workout from "@/public/workout.svg";
-export default function Home() {
+import FitbitDataComponent from "@/src/FitbitDataComponent"
+
+export default function Login() {
   return (
     <main>
       <div className="justify-between">
@@ -12,7 +14,6 @@ export default function Home() {
             alt="start your fitness journey"
           ></Image>
         </div>
-
         <div className="absolute inset-y-0 right-0 left-1/2 bg-primary">
           <div className="flex justify-center">
             <div className="px-5">
