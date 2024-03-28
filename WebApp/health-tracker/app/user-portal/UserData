@@ -1,0 +1,16 @@
+
+
+const myUser = {
+    username: "Mary97",
+    email: "mary97smith@aol.com",
+    password: "Pass1234",
+    firstName: "Mary",
+    lastName: "Smith",
+    height: "5'2''",
+    gender: 'Female',
+
+    weeklyReports: false,
+    theme: 'retro',
+
+    heartrate: "64",
+};

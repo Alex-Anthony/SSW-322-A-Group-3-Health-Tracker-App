@@ -3,10 +3,11 @@ import SmallBarChart from "@/app/components/SmallBarChart";
 import SmallCard from "@/app/components/SmallCard";
 import Widget from "@/app/components/Widget";
 import React from "react";
+import { getTheme } from "../Users";
 
 const healthData = () => {
   return (
-    <div className="flex items-start">
+    <div className="flex items-start" data-theme={getTheme()}>
       <Navbar />
       <div>
         <h1 className="text-3xl font-extrabold pl-10 pt-10">Health Data</h1>

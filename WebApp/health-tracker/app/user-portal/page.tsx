@@ -5,12 +5,12 @@ import TextBox from "../components/TextBox";
 import headerimg from "@/public/header.jpeg";
 import Image from "next/image";
 import FitbitDataComponent from "@/src/FitbitDataComponent"
-import { getHeartrate, getUsername } from "./Users";
+import { getFirstName, getTheme } from "./Users";
 
 
 const Home = () => {
   return (
-    <div className="flex items-start">
+    <div className="flex items-start" data-theme={getTheme()}>
       <Menu />
       <div className="flex flex-wrap flex-col gap-10">
         <div className="card w-full max-h-60 image-full">
@@ -20,7 +20,7 @@ const Home = () => {
           <div className="card-body">
             <div className="py-5 px-5 min-w-1/3 max-w-md">
 
-              <TextBox title={"Hello " + getUsername() + ", Welcome Back"}>
+              <TextBox title={"Hello " + getFirstName() + ", Welcome Back"}>
                 <p className="text-neutral-content">
                   Explore more of your fitness journey
                 </p>

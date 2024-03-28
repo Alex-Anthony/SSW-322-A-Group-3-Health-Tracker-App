@@ -3,10 +3,11 @@ import Navbar from "@/app/components/Navbar";
 import SmallCard from "@/app/components/SmallCard";
 import Widget from "@/app/components/Widget";
 import SmallBarChart from "@/app/components/SmallBarChart";
+import { getTheme } from "../Users";
 
 const insights = () => {
   return (
-    <div className="flex items-start">
+    <div className="flex items-start" data-theme={getTheme()}>
       <Navbar />
       <div>
         <h1 className="text-3xl font-extrabold pl-10 pt-10">Insights</h1>
