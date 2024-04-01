@@ -21,7 +21,7 @@ const Home = () => {
             <div className="py-5 px-5 min-w-1/3 max-w-md">
 
               <TextBox title={"Hello " + getFirstName() + ", Welcome Back"}>
-                <p className="text-neutral-content">
+                <p className="text-base-content">
                   Explore more of your fitness journey
                 </p>
               </TextBox>
@@ -32,7 +32,7 @@ const Home = () => {
           <div className="flex flex-col justify-center place-items-center">
             <div className="max-w-md align-center">
               <TextBox title="Your Goals">
-                <div className="grid grid-cols-2 w-full text-lg">
+                <div className="grid grid-cols-2 gap-3 gap-y-3 w-full text-lg">
                   <div>Steps</div>
                   <div>
                     <progress
@@ -51,7 +51,7 @@ const Home = () => {
                   </div>
 
 
-                  <div>Workout minutes</div>
+                  <div>Workout Minutes</div>
                   <div>
                     <progress
                       className="progress progress-accent max-w-full"
