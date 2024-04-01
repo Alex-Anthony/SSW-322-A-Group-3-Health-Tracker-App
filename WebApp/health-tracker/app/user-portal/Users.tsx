@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react'
-import FitbitDataComponent from '@/src/FitbitDataComponent';
+//import { getHeartRateTimeSeries } from '@/src/FitbitDataComponent';
 
 
 interface User {
@@ -67,6 +67,7 @@ const currUser = createUser(myUser);
 
 
 function getUsername() {
+
     return currUser.username;
 }
 
@@ -176,7 +177,8 @@ function setHealthAlerts(healthAlerts: boolean | undefined) {
 }
 
 function getHeartrate() {
-    return currUser.heartrate;
+    //getHeartRateTimeSeries()
+    return getHeartrate();
 }
 
 

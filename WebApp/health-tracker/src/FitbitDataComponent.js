@@ -126,3 +126,4 @@ const FitbitDataComponent = () => {
 };
 
 export default FitbitDataComponent;
+//export { getHeartRateTimeSeries };
