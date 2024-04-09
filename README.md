@@ -60,4 +60,11 @@
   - A summary of challenges and strength in your team work.
   - Any iterative changes you have made to your UML diagrams, as a result of your implementation.  (Remember, good design means that your UML diagrams always reflect your code exactly.)
   - Please submit your slides in the pdf format to this assignment on Canvas.
+
+# Milestone 4
+- Clean up and implement remaining features, such as setting goals, graphical displays, and more
+
+
+
+
    
