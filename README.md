@@ -63,6 +63,9 @@
 
 # Milestone 4
 - Clean up and implement remaining features, such as setting goals, graphical displays, and more
+- Interactive Graphs of Health Trends
+  - Bar plot of steps taken for each hour of the day
+  - Heart rate (BPM) vs Zone Minutes (during an intense workout)
 
 
 
