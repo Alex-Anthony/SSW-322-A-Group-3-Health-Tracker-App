@@ -62,12 +62,13 @@
   - Please submit your slides in the pdf format to this assignment on Canvas.
 
 # Milestone 4
+- Project Summary: your task is to implement the functions of the application. The following system requirements must be met:
 - Clean up and implement remaining features, such as setting goals, graphical displays, and more
 - Interactive Graphs of Health Trends
   - Bar plot of steps taken for each hour of the day
   - Heart rate (BPM) vs Zone Minutes (during an intense workout)
-
-
+- Being able to interact with the app as a user and coach
 
 
    
+
