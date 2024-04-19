@@ -1,7 +1,6 @@
 import Image from "next/image";
 import LoginBox from "./components/LoginBox";
 import workout from "@/public/workout.svg";
-import FitbitDataComponent from "@/src/FitbitDataComponent"
 
 export default function Login() {
   return (

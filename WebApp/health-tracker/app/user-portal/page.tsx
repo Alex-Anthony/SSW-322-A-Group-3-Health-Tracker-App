@@ -2,9 +2,8 @@
 import React, { useState } from "react";
 import Menu from "../components/Menu";
 import TextBox from "../components/TextBox";
-import headerimg from "@/public/header.jpeg";
+import headerimg from "@/public/header.jpeg"
 import Image from "next/image";
-import FitbitDataComponent from "@/src/FitbitDataComponent"
 import { getFirstName, getTheme } from "./Users";
 
 
