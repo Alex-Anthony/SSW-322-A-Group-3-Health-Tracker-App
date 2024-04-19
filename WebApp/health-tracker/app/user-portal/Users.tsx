@@ -1,6 +1,5 @@
 
-import React, { useState } from 'react'
-import FitbitDataComponent from '@/src/FitbitDataComponent';
+import React, { useState } from 'react';
 
 
 interface User {

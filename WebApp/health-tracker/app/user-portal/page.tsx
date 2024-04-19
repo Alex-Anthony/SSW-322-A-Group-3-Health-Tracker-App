@@ -68,7 +68,7 @@ const Home = () => {
           <div className="flex flex-col justify-center">
             <div className="stats stats-vertical shadow">
               <div className="stat">
-                <div className="stat-title">Today's Steps</div>
+                <div className="stat-title">Today&apos;s Steps</div>
                 <div className="stat-value">31K</div>
                 <div className="stat-desc">↗︎ 400 (22%)</div>
               </div>
@@ -80,7 +80,7 @@ const Home = () => {
               </div>
 
               <div className="stat">
-                <div className="stat-title">Last Night's Sleep</div>
+                <div className="stat-title">Last Night&apos;s Sleep</div>
                 <div className="stat-value">7.5</div>
                 <div className="stat-desc">↘︎ 9 (14%)</div>
               </div>
