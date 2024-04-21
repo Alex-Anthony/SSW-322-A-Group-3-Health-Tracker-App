@@ -54,7 +54,7 @@ export default function Login() {
                   <div className="text-center w-full max-w-sm">
                     <h1 className="text-5xl font-bold text-primary-content">Login</h1>
                     <p className="py-6 text-primary-content">
-                      Enter your credentials or click here{" "}
+                      Enter your credentials or click <Link to={'/register'}>here</Link>
                       to create a new account.
                     </p>
                   </div>

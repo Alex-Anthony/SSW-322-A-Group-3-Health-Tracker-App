@@ -3,7 +3,7 @@ import { useState } from "react";
 //import { DatePickerDemo } from "../components/DatePicker";
 import { getUsername, getFirstName, getLastName, getEmail, getTheme, getHeight, getWeight, getGender, getWeeklyReports, getGoalReminders, getHealthAlerts, } from "../components/Users";
 import TextDataEntry from "../components/TextDataEntry";
-import { handleSubmit } from "../components/UserCollection";
+
 
 const UserSettings = () => {
   const [weight, setTempWeight] = useState(getWeight());
@@ -215,7 +215,7 @@ const UserSettings = () => {
                 </div>
                 <div className="flex flex-row gap-5 justify-stretch">
                   <button className="btn w-1/2">Cancel</button>
-                  <button className="btn btn-primary w-1/2" onClick={handleSubmit}>Save</button>
+                  <button className="btn btn-primary w-1/2" >Save</button>
                 </div>
               </div>
             </div>
