@@ -1,8 +1,10 @@
+import { fullName, gender, dateOfBirth, weight } from "./UserCollection";
 
 interface User {
-    username: string;
-    email: string;
+    username?: string;
+    email?: string;
     password?: string;
+    fullname?: string;
     firstName?: string;
     lastName?: string;
 
@@ -46,17 +48,10 @@ function createUser({ username, password, email, firstName, lastName, height, we
 }
 
 const myUser: User = {
-    username: "Mary97",
-    email: "mary97smith@aol.com",
-    password: "Pass1234",
-    firstName: "Mary",
-    lastName: "Smith",
-    height: "5'2''",
-    gender: 'Female',
-
-    weeklyReports: false,
-
-    heartrate: "64",
+    username: fullName,
+    weight: weight,
+    gender: gender,
+    dob: dateOfBirth,
 };
 
 const currUser = createUser(myUser);

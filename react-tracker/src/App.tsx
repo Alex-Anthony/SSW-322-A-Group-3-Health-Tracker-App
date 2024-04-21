@@ -5,13 +5,19 @@ import HealthData from './pages/Health-Data';
 import Insights from './pages/Insights';
 import DoctorPortal from './pages/Doctor-Portal';
 import UserSettings from './pages/Settings';
+import FitbitDataComponent from './components/FitbitDataComponent';
+//import firebaseConfig from './backend/firebaseConfig'
+//import { initializeApp } from "firebase/app";
+
+
+//const app = initializeApp(firebaseConfig);
 
 function App() {
 
   return (
-
     <BrowserRouter>
       <Routes>
+        <Route path="/fitbit-data" element={<FitbitDataComponent />} />
         <Route path="/user-home" element={<UserHome />} />
         <Route path="/login" element={<Login />} />
         <Route path="/health-data" element={<HealthData />} />
@@ -21,6 +27,7 @@ function App() {
         <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
     </BrowserRouter>
+
   )
 }
 

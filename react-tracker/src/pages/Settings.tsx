@@ -1,8 +1,9 @@
 import Navbar from "../components/Navbar";
 import { useState } from "react";
 //import { DatePickerDemo } from "../components/DatePicker";
-import { getUsername, getFirstName, getLastName, getEmail, getTheme, getHeight, getWeight, getGender, getWeeklyReports, getGoalReminders, getHealthAlerts, setWeight, setFirstName, setLastName, setEmail, setUsername, setWeeklyReports, setGoalReminders, setHealthAlerts, setGender, setTheme, } from "../components/Users";
+import { getUsername, getFirstName, getLastName, getEmail, getTheme, getHeight, getWeight, getGender, getWeeklyReports, getGoalReminders, getHealthAlerts, } from "../components/Users";
 import TextDataEntry from "../components/TextDataEntry";
+import { handleSubmit } from "../components/UserCollection";
 
 const UserSettings = () => {
   const [weight, setTempWeight] = useState(getWeight());
@@ -16,7 +17,7 @@ const UserSettings = () => {
   const [gender, setTempGender] = useState(getGender())
   const [theme, setTempTheme] = useState(getTheme())
 
-  function saveChanges() {
+  /*function saveChanges() {
     //setHeight();
     setWeight(weight);
     setFirstName(firstName);
@@ -29,7 +30,7 @@ const UserSettings = () => {
     setGender(gender);
     setTheme(theme);
   }
-
+*/
 
 
   return (
@@ -214,7 +215,7 @@ const UserSettings = () => {
                 </div>
                 <div className="flex flex-row gap-5 justify-stretch">
                   <button className="btn w-1/2">Cancel</button>
-                  <button className="btn btn-primary w-1/2" onClick={saveChanges}>Save</button>
+                  <button className="btn btn-primary w-1/2" onClick={handleSubmit}>Save</button>
                 </div>
               </div>
             </div>
