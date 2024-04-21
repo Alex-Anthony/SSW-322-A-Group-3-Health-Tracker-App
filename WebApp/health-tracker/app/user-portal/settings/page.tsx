@@ -5,7 +5,7 @@ import { DatePickerDemo } from "@/app/components/DatePicker";
 import { getUsername, getFirstName, getLastName, getEmail, getTheme, getHeight, getWeight, getGender, getDOB, getWeeklyReports, getGoalReminders, getHealthAlerts, setHeight, setWeight, setFirstName, setLastName, setEmail, setUsername, setWeeklyReports, setGoalReminders, setHealthAlerts, setGender, setTheme, setDOB } from "../Users";
 import TextDataEntry from "@/app/components/TextDataEntry";
 
-const userSettings = () => {
+const UserSettings = () => {
   const [weight, setTempWeight] = useState(getWeight());
   const [firstName, setTempfirstName] = useState(getFirstName());
   const [lastName, setTemplastName] = useState(getLastName());
@@ -226,4 +226,4 @@ const userSettings = () => {
   );
 };
 
-export default userSettings;
+export default UserSettings;
