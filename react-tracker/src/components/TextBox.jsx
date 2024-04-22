@@ -1,11 +1,7 @@
 import { ReactNode } from "react";
 
-interface TBProps {
-  title?: string;
-  children?: ReactNode;
-}
 
-const TextBox = ({ title, children }: TBProps) => {
+const TextBox = ({ title, children }) => {
   return (
     <div className="card bg-base-200 ">
       <div className="card-body items-center text-center">

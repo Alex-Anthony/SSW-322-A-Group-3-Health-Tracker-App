@@ -1,11 +1,7 @@
 import { ReactNode } from "react";
 
-interface SCProps {
-  title: string;
-  children?: ReactNode;
-}
 
-const SmallCard = ({ title, children }: SCProps) => {
+const SmallCard = ({ title, children }) => {
   return (
     <div>
       <div className="card bg-base-200 w-full">

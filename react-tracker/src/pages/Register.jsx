@@ -27,7 +27,7 @@ const SignUp = () => {
     return () => unsubscribe();
   }, [auth, navigate]);
 
-  const registerAccount = (e: React.FormEvent) => {
+  const registerAccount = (e) => {
     e.preventDefault();
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {

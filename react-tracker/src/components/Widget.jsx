@@ -1,11 +1,6 @@
 
 
-interface WGProps {
-  title: string;
-  svgPath?: string;
-}
-
-const Widget = ({ title, svgPath }: WGProps) => {
+const Widget = ({ title, svgPath }) => {
   return (
     <div className="card bg-secondary h-32 w-32">
       <div className="card-body h-full justify-center items-center">

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { getFullName } from "../components/Users";
+import { getFullName } from "./Users";
 
 
 const Menu = () => {

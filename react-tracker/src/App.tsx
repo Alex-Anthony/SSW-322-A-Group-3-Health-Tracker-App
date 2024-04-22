@@ -1,6 +1,5 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import UserHome from "./pages/UserHome"
-import Login from './pages/Login';
 import HealthData from './pages/Health-Data';
 import Insights from './pages/Insights';
 import DoctorPortal from './pages/Doctor-Portal';
@@ -44,8 +43,6 @@ function App() {
         <Route path="/settings" element={<UserSettings />} />
         <Route path="/doctor-portal" element={<DoctorPortal />} />
         <Route path="/register" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Navigate to="/login" />} />
       </Routes>
     </BrowserRouter>
 

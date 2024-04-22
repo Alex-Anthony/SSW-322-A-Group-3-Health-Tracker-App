@@ -25,7 +25,7 @@ export default function Login() {
     return () => unsubscribe();
   }, [auth, navigate]);
 
-  const login = (e: FormEvent<HTMLDivElement>) => {
+  const login = (e) => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {

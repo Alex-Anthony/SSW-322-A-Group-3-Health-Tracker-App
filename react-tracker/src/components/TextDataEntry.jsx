@@ -1,11 +1,7 @@
 import { useState } from 'react'
 
-interface TDEProps {
-    label: string;
-    initialValue: string | undefined;
-}
 
-const TextDataEntry = ({ label, initialValue }: TDEProps) => {
+const TextDataEntry = ({ label, initialValue }) => {
     const [data, setData] = useState(initialValue);
 
     return (
