@@ -1,0 +1,61 @@
+[debug] [2024-04-20T01:42:14.000Z] ----------------------------------------------------------------------
+[debug] [2024-04-20T01:42:14.002Z] Command:       /usr/local/share/nvm/versions/node/v20.11.1/bin/node /home/codespace/nvm/current/bin/firebase deploy
+[debug] [2024-04-20T01:42:14.002Z] CLI Version:   13.6.0
+[debug] [2024-04-20T01:42:14.002Z] Platform:      linux
+[debug] [2024-04-20T01:42:14.002Z] Node Version:  v20.11.1
+[debug] [2024-04-20T01:42:14.002Z] Time:          Sat Apr 20 2024 01:42:14 GMT+0000 (Coordinated Universal Time)
+[debug] [2024-04-20T01:42:14.002Z] Env Overrides: GITHUB_API_URL
+[debug] [2024-04-20T01:42:14.002Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-20T01:42:14.151Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-20T01:42:14.152Z] > authorizing via signed-in user (sgaber@stevens.edu)
+[debug] [2024-04-20T01:42:14.152Z] [iam] checking project healthmonitoringapp-152ca for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-04-20T01:42:14.154Z] > refreshing access token with scopes: []
+[debug] [2024-04-20T01:42:14.156Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-04-20T01:42:14.156Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-20T01:42:14.280Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-04-20T01:42:14.280Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-20T01:42:14.315Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/healthmonitoringapp-152ca:testIamPermissions [none]
+[debug] [2024-04-20T01:42:14.315Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/healthmonitoringapp-152ca:testIamPermissions x-goog-quota-user=projects/healthmonitoringapp-152ca
+[debug] [2024-04-20T01:42:14.315Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/healthmonitoringapp-152ca:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-20T01:42:14.457Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/healthmonitoringapp-152ca:testIamPermissions 200
+[debug] [2024-04-20T01:42:14.458Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/healthmonitoringapp-152ca:testIamPermissions {}
+[debug] [2024-04-20T01:42:14.458Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project healthmonitoringapp-152ca:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2024-04-20T01:42:14.458Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/healthmonitoringapp-152ca [none]
+[debug] [2024-04-20T01:42:14.665Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/healthmonitoringapp-152ca 403
+[debug] [2024-04-20T01:42:14.665Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/healthmonitoringapp-152ca {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-04-20T01:42:14.666Z] HTTP Error: 403, The caller does not have permission
+[debug] [2024-04-20T01:42:14.667Z] Specified "public" directory "build" does not exist; Deploy to Hosting site "" may fail or be empty.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2024-04-20T01:43:45.306Z] ----------------------------------------------------------------------
+[debug] [2024-04-20T01:43:45.307Z] Command:       /usr/local/share/nvm/versions/node/v20.11.1/bin/node /home/codespace/nvm/current/bin/firebase deploy
+[debug] [2024-04-20T01:43:45.308Z] CLI Version:   13.6.0
+[debug] [2024-04-20T01:43:45.308Z] Platform:      linux
+[debug] [2024-04-20T01:43:45.308Z] Node Version:  v20.11.1
+[debug] [2024-04-20T01:43:45.308Z] Time:          Sat Apr 20 2024 01:43:45 GMT+0000 (Coordinated Universal Time)
+[debug] [2024-04-20T01:43:45.308Z] Env Overrides: GITHUB_API_URL
+[debug] [2024-04-20T01:43:45.308Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-20T01:43:45.399Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-20T01:43:45.399Z] > authorizing via signed-in user (sgaber@stevens.edu)
+[debug] [2024-04-20T01:43:45.400Z] [iam] checking project healthmonitoringapp-152ca for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-04-20T01:43:45.401Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/healthmonitoringapp-152ca:testIamPermissions [none]
+[debug] [2024-04-20T01:43:45.401Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/healthmonitoringapp-152ca:testIamPermissions x-goog-quota-user=projects/healthmonitoringapp-152ca
+[debug] [2024-04-20T01:43:45.401Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/healthmonitoringapp-152ca:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-20T01:43:45.657Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/healthmonitoringapp-152ca:testIamPermissions 200
+[debug] [2024-04-20T01:43:45.657Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/healthmonitoringapp-152ca:testIamPermissions {}
+[debug] [2024-04-20T01:43:45.657Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project healthmonitoringapp-152ca:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2024-04-20T01:43:45.658Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/healthmonitoringapp-152ca [none]
+[debug] [2024-04-20T01:43:45.962Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/healthmonitoringapp-152ca 403
+[debug] [2024-04-20T01:43:45.962Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/healthmonitoringapp-152ca {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-04-20T01:43:45.963Z] HTTP Error: 403, The caller does not have permission
+[debug] [2024-04-20T01:43:45.964Z] Specified "public" directory "build" does not exist; Deploy to Hosting site "" may fail or be empty.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier

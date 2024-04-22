@@ -1,6 +1,5 @@
-import Link from "next/link";
-import React from "react";
-import { getFullName } from "../user-portal/Users";
+import { Link } from "react-router-dom";
+import { getFullName } from "./Users";
 
 
 const Menu = () => {
@@ -14,7 +13,7 @@ const Menu = () => {
         </div>
         <p className="flex justify-center py-5">{getFullName()}</p>
         <li className="pt-4 py-2">
-          <Link href="/user-portal">
+          <Link to={"/user-home"}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -33,7 +32,7 @@ const Menu = () => {
           </Link>
         </li>
         <li className="py-2">
-          <Link href="/user-portal/health-data">
+          <Link to={"/health-data"}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -52,7 +51,7 @@ const Menu = () => {
           </Link>
         </li>
         <li className="py-2">
-          <Link href="/user-portal/insights">
+          <Link to={"/insights"}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -71,7 +70,7 @@ const Menu = () => {
           </Link>
         </li>
         <li className="py-2">
-          <Link href="/user-portal/doctor-portal">
+          <Link to={"/doctor-portal"}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -90,7 +89,7 @@ const Menu = () => {
           </Link>
         </li>
         <li className="pt-52 py-2">
-          <Link href="/user-portal/settings">
+          <Link to={"/settings"}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -115,7 +114,7 @@ const Menu = () => {
           </Link>
         </li>
         <li className="py-2">
-          <Link href="/">
+          <Link to={"/settings"}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"

@@ -1,10 +1,7 @@
-'use client'
-import React, { useState } from "react";
 import Menu from "../components/Menu";
 import TextBox from "../components/TextBox";
-import headerimg from "@/public/header.jpeg"
-import Image from "next/image";
-import { getFirstName, getTheme } from "./Users";
+import headerimg from "../../public/header.jpeg";
+import { getFirstName, getTheme } from "../components/Users";
 
 
 const Home = () => {
@@ -14,7 +11,7 @@ const Home = () => {
       <div className="flex flex-wrap flex-col gap-10">
         <div className="card w-full max-h-60 image-full">
           <figure>
-            <Image src={headerimg} alt="" />
+            <img className="w-full" src={headerimg} alt="" />
           </figure>
           <div className="card-body">
             <div className="py-5 px-5 min-w-1/3 max-w-md">
@@ -31,7 +28,7 @@ const Home = () => {
           <div className="flex flex-col justify-center place-items-center">
             <div className="max-w-md align-center">
               <TextBox title="Your Goals">
-                <div className="grid grid-cols-2 gap-3 gap-y-3 w-full text-lg">
+                <div className="grid grid-cols-2 w-full gap-x-4 text-lg">
                   <div>Steps</div>
                   <div>
                     <progress
@@ -50,7 +47,7 @@ const Home = () => {
                   </div>
 
 
-                  <div>Workout Minutes</div>
+                  <div>Workout minutes</div>
                   <div>
                     <progress
                       className="progress progress-accent max-w-full"
@@ -69,20 +66,20 @@ const Home = () => {
             <div className="stats stats-vertical shadow">
               <div className="stat">
                 <div className="stat-title">Today&apos;s Steps</div>
-                <div className="stat-value">31K</div>
+                <div className="stat-value text-secondary">31K</div>
                 <div className="stat-desc">↗︎ 400 (22%)</div>
               </div>
 
               <div className="stat">
                 <div className="stat-title">Heart Rate</div>
-                <div className="stat-value">64</div>
+                <div className="stat-value text-secondary">64</div>
                 <div className="stat-desc">↗︎ 400 (22%)</div>
               </div>
 
               <div className="stat">
                 <div className="stat-title">Last Night&apos;s Sleep</div>
-                <div className="stat-value">7.5</div>
-                <div className="stat-desc">↘︎ 9 (14%)</div>
+                <div className="stat-value text-secondary">7.5</div>
+                <div className="stat-desc">↘ 9 (14%)</div>
               </div>
             </div>
           </div>

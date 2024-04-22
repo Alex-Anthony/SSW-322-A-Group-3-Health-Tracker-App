@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 
 
@@ -75,7 +74,7 @@ const FitbitDataComponent = () => {
     // functions called after the authorization is complete
     const functionsRan = async (accessToken) => {
         getProfile(accessToken);
-        getHeartRateTimeSeries(accessToken, '2024-03-22', '1d'); // Adjust the date range as needed
+        getHeartRateTimeSeries(accessToken, '2024-02-02', '1d'); // Adjust the date range as needed
     }
 
     const APIRequest = async (endpoint, requestHeaders) => {
@@ -92,7 +91,7 @@ const FitbitDataComponent = () => {
 
     const getProfile = async (accessToken) => {
         const profileEndpoint = 'https://api.fitbit.com/1/user/-/profile.json';
-        const profileHeaders = {
+        const profileHeaders = { 
             headers: {
                 Authorization: `Bearer ${accessToken}`,
             }
@@ -115,9 +114,9 @@ const FitbitDataComponent = () => {
 
     return (
         <div>
-            <h2>Hi {profile != "" ? profile.user.fullName : "World"}!
-                You burned {heartrate != "" ? heartrate?.['activities-heart'][0]?.dateTime : "YYYY-MM-DD"} is {heartrate != "" ? heartrate?.['activities-heart'][0]?.value.heartRateZones[0].caloriesOut : "???"} calories
-            </h2>
+        <h2>Hi {profile != "" ? profile.user.fullName : "World"}! 
+        Your resting heartrate on {heartrate != "" ? heartrate?.['activities-heart'][0]?.dateTime : "YYYY-MM-DD"} is {heartrate != "" ? heartrate?.['activities-heart'][0]?.value.restingHeartRate : "???"} bpm
+        </h2>
             <p>{JSON.stringify(profile)}</p>
             <hr></hr>
             <p>{JSON.stringify(heartrate)}</p>

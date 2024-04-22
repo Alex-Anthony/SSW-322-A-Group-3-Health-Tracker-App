@@ -1,11 +1,8 @@
-
-import React, { useState } from 'react';
-
-
 interface User {
-    username: string;
-    email: string;
+    username?: string;
+    email?: string;
     password?: string;
+    fullname?: string;
     firstName?: string;
     lastName?: string;
 
@@ -25,7 +22,7 @@ interface User {
 
 function createUser({ username, password, email, firstName, lastName, height, weight, gender, dob, theme = 'default', weeklyReports = true, goalReminders = true, healthAlerts = true, heartrate }: User) {
 
-    let myUser: User = {
+    const myUser: User = {
         username: username,
         email: email,
         password: password,
@@ -48,7 +45,7 @@ function createUser({ username, password, email, firstName, lastName, height, we
 
 }
 
-let myUser: User = {
+const myUser: User = {
     username: "Mary97",
     email: "mary97smith@aol.com",
     password: "Pass1234",
@@ -57,8 +54,6 @@ let myUser: User = {
     height: "5'2''",
     gender: 'Female',
 
-    weeklyReports: false,
-
     heartrate: "64",
 };
 
@@ -66,7 +61,6 @@ const currUser = createUser(myUser);
 
 
 function getUsername() {
-
     return currUser.username;
 }
 
@@ -176,14 +170,9 @@ function setHealthAlerts(healthAlerts: boolean | undefined) {
 }
 
 function getHeartrate() {
-    //getHeartRateTimeSeries()
-    return getHeartrate();
+    return currUser.heartrate;
 }
 
 
-const Users = () => {
-
-    return
-}
 
 export { getUsername, getEmail, getPassword, getFirstName, getLastName, getFullName, getHeight, getWeight, getGender, getDOB, getTheme, getWeeklyReports, getGoalReminders, getHealthAlerts, getHeartrate, setUsername, setEmail, setPassword, setFirstName, setLastName, setHeight, setWeight, setGender, setDOB, setTheme, setWeeklyReports, setGoalReminders, setHealthAlerts }
