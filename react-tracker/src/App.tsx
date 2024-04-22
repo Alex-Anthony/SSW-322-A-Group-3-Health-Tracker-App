@@ -6,7 +6,7 @@ import Insights from './pages/Insights';
 import DoctorPortal from './pages/Doctor-Portal';
 import UserSettings from './pages/Settings';
 //import BackendDemo from './pages/BackendDemo';
-//import SignUp from './pages/Register';
+import SignUp from './pages/Register';
 import FitbitDataComponent from './components/FitbitDataComponent';
 //import firebaseConfig from './backend/firebaseConfig'
 //import { initializeApp } from "firebase/app";
@@ -43,6 +43,7 @@ function App() {
         <Route path="/insights" element={<Insights />} />
         <Route path="/settings" element={<UserSettings />} />
         <Route path="/doctor-portal" element={<DoctorPortal />} />
+        <Route path="/register" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
