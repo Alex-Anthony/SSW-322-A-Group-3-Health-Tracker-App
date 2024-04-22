@@ -8,7 +8,7 @@ const FitbitDataComponent = () => {
     /************ Change for your app *************/
     const clientId = '23RX8W';
     const clientSecret = '99c63ffe9999af91fb1e0fcd9ae67802';
-    const redirectUri = 'https://testing-nextjs-integration.web.app/'; // the redirectURL in FitBit app
+    const redirectUri = 'https://testing-reactjs-integration.web.app/'; // the redirectURL in FitBit app
 
     /*  ------------------------------ Authorization ------------------------------  */
 

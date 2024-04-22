@@ -1,5 +1,5 @@
-const ClientID = '23RWVX';
-const ClientSecret = 'df1d2c69aec23484100a8acd92402596';
-const RedirectUri = 'https://fitbit-tracker-3730d.web.app'; // the redirectURL in FitBit app
+const ClientID = '23RX8W';
+const ClientSecret = '99c63ffe9999af91fb1e0fcd9ae67802';
+const RedirectUri = 'https://testing-reactjs-integration.web.app/'; // the redirectURL in FitBit app
 
 export {ClientID, ClientSecret, RedirectUri};
