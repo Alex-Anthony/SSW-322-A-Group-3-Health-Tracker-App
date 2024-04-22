@@ -45,7 +45,7 @@ function App() {
         <Route path="/doctor-portal" element={<DoctorPortal />} />
         <Route path="/register" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
-        <Route path="*" element={<Navigate to="/login" />} />
+        <Route path="/" element={<Navigate to="/login" />} />
       </Routes>
     </BrowserRouter>
 
