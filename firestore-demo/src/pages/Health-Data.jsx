@@ -1,8 +1,11 @@
 import Navbar from "../components/Navbar";
 import SmallCard from "../components/SmallCard";
 import Widget from "../components/Widget";
+import { useFitbitAuth } from '../fitbit/fitbitAuth';
 
 const HealthData = () => {
+  const accessToken = useFitbitAuth();
+
   return (
     <div className="flex items-start">
       <Navbar />
@@ -30,7 +33,6 @@ const HealthData = () => {
                 </SmallCard>
               </div>
               <SmallCard title="Step Tracker">
-
               </SmallCard>
             </div>
             <div className="flex flex-col gap-5">
