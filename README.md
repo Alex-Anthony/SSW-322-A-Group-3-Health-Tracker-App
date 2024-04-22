@@ -60,4 +60,15 @@
   - A summary of challenges and strength in your team work.
   - Any iterative changes you have made to your UML diagrams, as a result of your implementation.  (Remember, good design means that your UML diagrams always reflect your code exactly.)
   - Please submit your slides in the pdf format to this assignment on Canvas.
+
+# Milestone 4
+- Project Summary: your task is to implement the functions of the application. The following system requirements must be met:
+- Clean up and implement remaining features, such as setting goals, graphical displays, and more
+- Interactive Graphs of Health Trends
+  - Bar plot of steps taken for each hour of the day
+  - Heart rate (BPM) vs Zone Minutes (during an intense workout)
+- Being able to interact with the app as a user and coach
+
+
    
+
