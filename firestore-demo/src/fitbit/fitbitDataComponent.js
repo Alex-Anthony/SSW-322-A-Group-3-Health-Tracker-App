@@ -83,7 +83,7 @@ const FitbitDataComponent = ({ accessToken }) => {
   };
 
   
-  const createFoodLog = async (foodDetails) => {
+  const createFoodLog = async (accessToken, foodDetails) => {
     const foodLogEndpoint = `https://api.fitbit.com/1/user/-/foods/log.json`;
     const foodLogHeaders = {
       method: 'POST',
@@ -94,7 +94,13 @@ const FitbitDataComponent = ({ accessToken }) => {
       body: JSON.stringify(foodDetails)
     };
 
-    return await APIRequest(foodLogEndpoint, foodLogHeaders);
+    //return await APIRequest(foodLogEndpoint, foodLogHeaders);
+    try {
+      const response = await APIRequest(foodLogEndpoint, foodLogHeaders);
+      return response;
+    } catch (error) {
+      throw new Error(`Error creating food log: ${error}`);
+    }
   };
 
   const getFoodUnits = async () => {
