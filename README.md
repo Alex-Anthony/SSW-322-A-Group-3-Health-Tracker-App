@@ -13,6 +13,12 @@
   
 # Break down of our group's React application setup and of Firebase and React Router:
 
+Background:
+- The front-end utilized a React and next.js framework
+    - It was written in TypeScript and Tailwind CSS
+- We also used plugins like daisyUI for more complex design elements
+- The back-end was mostly done in JavaScript
+
 1. **Firebase Integration**:
    - **Initialization**: The Firebase app is initialized using configurations imported from `firebaseConfig`. This initialization links the React app with the Firebase backend, enabling various services like authentication and database functionalities.
    - **Configuration Management**: Storing Firebase configuration settings in a separate file (`./backend/firebaseConfig`) helps maintain security and organization, making it easier to manage keys and endpoints centrally.
