@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import Register from './pages/Register';
 import Login from './pages/Login';
-import BackendDemo from './pages/BackendDemo';
 import { initializeApp } from 'firebase/app';
 import firebaseConfig from './backend/firebaseConfig';
 import HealthData from './pages/Health-Data';
