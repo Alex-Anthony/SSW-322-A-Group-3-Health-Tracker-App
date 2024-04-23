@@ -11,7 +11,7 @@
 - Create profile for the user.
 - Conduct trend analysis based on the insights derived from the interactive charts.
   
-# Break down of the React application setup and of Firebase and React Router:
+# Break down of our group's React application setup and of Firebase and React Router:
 
 1. **Firebase Integration**:
    - **Initialization**: The Firebase app is initialized using configurations imported from `firebaseConfig`. This initialization links the React app with the Firebase backend, enabling various services like authentication and database functionalities.
