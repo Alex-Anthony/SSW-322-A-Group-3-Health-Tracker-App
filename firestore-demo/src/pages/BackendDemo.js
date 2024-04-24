@@ -132,9 +132,34 @@ function BackendDemo() {
         }
     }, [accessToken]);
 
+    const handleProfileUpdateSubmit = async (e) => {
+        e.preventDefault();
+        const updateProfile = FitbitDataComponent({ accessToken });
+    
+        const userDetails = {
+          gender: gender,
+          weight: weight,
+          fullName: fullName,
+          dob: dateOfBirth,
+          height: height,
+          //avatar: avatar,
+          displayName: displayName,
+          coach: isCoach
+        };
+    
+        try {
+          const response = await updateProfile(userDetails);
+          console.log('Update profile:', response);
+          alert("Profile successfully updated!");
+        } catch (error) {
+          console.error('Error updating profile:', error);
+          alert("Failed to update profile. Check the console for more details.");
+        }
+      };
+
     const handleFoodLogSubmit = async (e) => {
         e.preventDefault();
-        const { createFoodLog } = FitbitDataComponent({ accessToken });
+        const createFoodLog = FitbitDataComponent({ accessToken });
     
         const foodDetails = {
           foodId: foodId || undefined,
@@ -174,7 +199,7 @@ function BackendDemo() {
             alert('Please enter a date to fetch sleep data.');
             return;
         }
-        const { getSleepLogByDate } = FitbitDataComponent({ accessToken });
+        const getSleepLogByDate = FitbitDataComponent({ accessToken });
         try {
             const data = await getSleepLogByDate(sleepDate);
             setSleepData(data);
@@ -224,6 +249,21 @@ function BackendDemo() {
             <b>Avatar640: </b> {avatar640}<br />
             <b>Display Name: </b> {displayName}<br />
             <b>VO2 Max: </b> {vo2Max && vo2Max.length > 0 ? vo2Max[0].value.vo2Max : 'No data available'}<br />
+
+            <h2>Update Profile</h2>
+            <form onSubmit={handleProfileUpdateSubmit}>
+                <input type="text" placeholder="Gender" value={gender} onChange={e => setGender(e.target.value)} />
+                <input type="text" placeholder="Weight" value={weight} onChange={e => setWeight(e.target.value)} />
+                <input type="text" placeholder="Full Name" value={fullName} onChange={e => setFullName(e.target.value)} />
+                <input type="text" placeholder="Date of Birth" value={dateOfBirth} onChange={e => setDateOfBirth(e.target.value)} />
+                <input type="text" placeholder="Height" value={height} onChange={e => setHeight(e.target.value)} />
+                <input type="text" placeholder="Display Name" value={displayName} onChange={e => setDisplayName(e.target.value)} />
+                <label>
+                Is Coach:
+                <input type="checkbox" checked={isCoach} onChange={e => setIsCoach(e.target.checked)} />
+                </label>
+                <button type="submit">Log Food</button>
+            </form>
             
             <h2>Fetch Sleep Data</h2>
             <input

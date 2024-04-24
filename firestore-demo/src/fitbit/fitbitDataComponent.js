@@ -294,6 +294,28 @@ const FitbitDataComponent = ({ accessToken }) => {
     
         return await APIRequest(sleepGoalsEndpoint, sleepGoalsHeaders);
     };
+
+    const updateProfile = async (accessToken, userDetails) => {
+        const profileDetailsEndpoint = `https://api.fitbit.com/1/user/-/profile.json`;
+        const requestBody = JSON.stringify(userDetails);
+        const contentLength = new TextEncoder().encode(requestBody).length;
+        const profileDetailsHeaders = {
+            method: 'POST',
+            headers: {
+            'Authorization': `Bearer ${accessToken}`,
+            'Content-Type': 'application/json',
+            'Content-Length': contentLength
+            },
+            body: requestBody
+        }; 
+
+        try {
+            const response = await APIRequest(profileDetailsEndpoint, profileDetailsHeaders);
+            return response;
+            } catch (error) {
+            throw new Error(`Error updating profile: ${error}`);
+            }
+    };
   
 
 
@@ -319,7 +341,8 @@ const FitbitDataComponent = ({ accessToken }) => {
       getWaterLog,
       deleteWaterLog,
       createSleepGoal,
-      getSleepGoals
+      getSleepGoals,
+      updateProfile
   };
 };
 
